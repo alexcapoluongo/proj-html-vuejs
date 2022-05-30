@@ -35,7 +35,7 @@ export default {
     height: 500px;
 
     h3 {
-        color: red;
+        color: $monza;
         font-size: 1em;
     }
 

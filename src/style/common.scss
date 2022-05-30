@@ -12,3 +12,22 @@ a {
     text-decoration: none;
 }
 
+//common button
+
+.ms-btn {
+    white-space: nowrap; 
+    color: black;
+    background-color: red;
+    border-radius: 15px;
+    height: 30px;      
+    display: flex;
+    align-items: center;
+    padding: 10px;      
+    font-size: .7em;
+}
+
+// common colors
+$codgray: #060606;
+$dodgerblue: #4154fe;
+$monza: #bc0428;
+$jumbo: #78787a;

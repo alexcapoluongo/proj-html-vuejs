@@ -109,7 +109,7 @@ export default {
                     }
 
                     a {
-                        color: #78787a;
+                        color: $jumbo;
                         line-height: 60px;
                         display: flex;
                         align-items: center;

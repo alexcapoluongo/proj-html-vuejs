@@ -47,12 +47,12 @@ export default {
                     slogan: "Push your limits"   
                 },
                 {
-                    image: "service15-2x.jpg",
+                    image: "box1-2x.jpg",
                     service: "New gym apparel",
                     slogan: "Look good, feel good"   
                 },
                 {
-                    image: "service6-2x.jpg",
+                    image: "box3-2x.jpg",
                     service: "Team training",
                     slogan: "Find a partner"   
                 }
@@ -102,6 +102,7 @@ export default {
     p {
         font-size: 1.5em;
         text-align: center;
+        color: white;
     }
 
     .user {
@@ -127,10 +128,11 @@ export default {
             
                 #username {
                     font-weight: bolder;
+                    color: white;
                 }
 
                 #user-city {
-                    color: red;
+                    color: $jumbo;
                 }
             }
         }

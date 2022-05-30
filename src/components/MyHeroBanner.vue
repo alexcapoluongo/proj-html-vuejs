@@ -24,7 +24,7 @@ export default {
 }
 
 p {
-    color: #78787a;
+    color: $jumbo;
 }
 
 ul {
@@ -60,8 +60,8 @@ ul {
     }
         #btn-gray {
             background-color: black;
-            color:#78787a;
-            border: 1px solid #78787a;
+            color: $jumbo;
+            border: 1px solid $jumbo;
 
             &:hover {
                 background-color: white;
