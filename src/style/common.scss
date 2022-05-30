@@ -1,9 +1,14 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import'~bootstrap/dist/css/bootstrap.css';
 
-.container {
-    width: 80%;
+.ms-container {
+    width: 70%;
     height: 100%;
     margin: 0 auto;
     border: 1px solid red;
 }
+
+a {
+    text-decoration: none;
+}
+

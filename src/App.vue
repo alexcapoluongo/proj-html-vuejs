@@ -34,4 +34,7 @@ export default {
   box-sizing: border-box;
 }
 
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
 </style>
