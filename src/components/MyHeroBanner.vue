@@ -1,0 +1,73 @@
+<template>
+  <div>
+    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam minus.</p>
+    <ul>
+        <li><a class="ms-btn" href=""> Visit my Youtube Channel</a></li>
+        <li class="mx-2"><a class="ms-btn" id="btn-gray" href="">Buy Avada today -> </a></li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+    name: "MyHeroBanner",
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../style/common.scss";
+
+
+
+.ms-container {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 97%);
+}
+
+p {
+    color: #78787a;
+}
+
+ul {
+    display: flex;
+    justify-content:flex-start;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+
+        .ms-btn {
+            white-space: nowrap; 
+            color:white;
+            background-color: #4154fe;
+            border-radius: 15px;
+            height: 35px;      
+            padding: 15px;      
+            font-size: .7em;
+            
+            &:hover {
+                background-color: #ec5a57;
+            }
+
+        }
+    }
+        #btn-gray {
+            background-color: black;
+            color:#78787a;
+            border: 1px solid #78787a;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+}
+
+</style>

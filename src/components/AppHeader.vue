@@ -7,7 +7,7 @@
            </div>
            <div class="menu">
                <ul>
-                    <li><a href=""> Home </a></li>
+                    <li><a class="active" href=""> Home </a></li>
                     <li><a href=""> Services </a></li>
                     <li><a href=""> About </a></li>
                     <li><a href=""> Videos </a></li>
@@ -84,6 +84,14 @@ export default {
                         height: 30px;      
                         padding: 15px;      
                         font-size: .8em;
+
+                        &:hover {
+                            background-color: #ec5a57;
+                        }
+                    }
+
+                    .active {
+                        color: white;
                     }
 
                     .new {
@@ -103,7 +111,9 @@ export default {
                         display: flex;
                         align-items: center;
 
-
+                        &:hover {
+                            color: white;
+                        }
 
                         i {
                             line-height: 60px;
