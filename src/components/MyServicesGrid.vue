@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div v-for="item in servicesArray" :key="item" class="col">         
-                    <div class="item">
+                    <div class="item" :style="{'background-image': 'url(' + require(`../assets/img/${item.image}`) + ')'}">
                         <div class="text-wrap mx-3">
                             <span>____</span>
                             <h3 class="mb-0">{{ item.service }}</h3>
@@ -26,14 +26,17 @@ export default {
         return {
             servicesArray: [
                 {
+                    image: "service6-2x.jpg",
                     service: "Crossfit workout",
                     slogan: "Push your limits"   
                 },
                 {
+                    image: "service15-2x.jpg",
                     service: "New gym apparel",
                     slogan: "Look good, feel good"   
                 },
                 {
+                    image: "service6-2x.jpg",
                     service: "Team training",
                     slogan: "Find a partner"   
                 }
@@ -54,7 +57,6 @@ export default {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    background-image:url("../assets/img/service6-2x.jpg");
     background-size:cover;
 
     .text-wrap {
