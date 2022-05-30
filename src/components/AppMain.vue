@@ -5,8 +5,12 @@
                 <MyBanner />
             </section>
 
-            <section class="services">
-                <MyServicesGrid />
+            <section class="services" id="services">
+                <MyServices />
+            </section>
+
+            <section class="about" id="about">
+                <MyAbout />
             </section>
       -- Main Content
   </main>
@@ -16,13 +20,16 @@
 <script>
 
 import MyBanner from "./MyBanner.vue";
-import MyServicesGrid from "./MyServicesGrid.vue";
+import MyServices from "./MyServices.vue";
+import MyAbout from "./MyAbout.vue";
+
 
 export default {
     name: "AppMain",
     components: {
         MyBanner,
-        MyServicesGrid,
+        MyServices,
+        MyAbout,
     }
 }
 </script>
@@ -36,7 +43,5 @@ export default {
 
 }
 
-.services {
-    height: 400px;
-}
+
 </style>

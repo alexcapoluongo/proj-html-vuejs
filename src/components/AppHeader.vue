@@ -7,17 +7,17 @@
            </div>
            <div class="menu">
                <ul>
-                    <li><a class="active" href=""> Home </a></li>
-                    <li><a href=""> Services </a></li>
-                    <li><a href=""> About </a></li>
-                    <li><a href=""> Videos </a></li>
-                    <li><a href=""> Blog </a></li>
-                    <li><a href=""> Store </a> <span class="new">new</span> </li>
-                    <li ><a class="schedule" href=""> Schedule a workout </a></li>
-                    <li><a href=""> <i class="fa-solid fa-cart-shopping"></i>
+                    <li><a class="active" href="#hero-banner"> Home </a></li>
+                    <li><a href="#services"> Services </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#videos"> Videos </a></li>
+                    <li><a href="#blog"> Blog </a></li>
+                    <li><a href="#store"> Store </a> <span class="new">new</span> </li>
+                    <li ><a class="schedule" href="#schedule"> Schedule a workout </a></li>
+                    <li><a href="#shop"> <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                     </li>
-                    <li><a href=""> <i class="fas fa-search"></i>
+                    <li><a href="#search"> <i class="fas fa-search"></i>
                         </a>
                     </li>
 
