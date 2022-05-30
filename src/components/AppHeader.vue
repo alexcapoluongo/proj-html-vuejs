@@ -47,6 +47,9 @@ export default {
     width: 100%;
     height: 60px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
 
     .ms-container {
         display: flex;

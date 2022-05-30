@@ -1,13 +1,13 @@
 <template>
   
-  <div class="banner" id="hero-banner">
+  <div class="banner">
         <div class="ms-container pt-5">
             <h3 class="mt-3">Certified fitness professional</h3>
             <h1>Take control of your health</h1>
             <span>_______</span>
 
             <MyHeroBanner />
-            
+
         </div>
     </div>
             
@@ -32,8 +32,7 @@ export default {
 @import "../style/common.scss";
 
 .banner {
-    height: 400px;
-    background-color: olivedrab ;
+    height: 500px;
 
     h3 {
         color: red;
