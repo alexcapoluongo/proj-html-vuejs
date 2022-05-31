@@ -4,10 +4,10 @@
         <div class="container">
             <!-- grid -->
             <div class="row">
-                <div v-for="item in servicesArray" :key="item" class="col">         
-                    <div class="item" :style="{'background-image': 'url(' + require(`../assets/img/${item.image}`) + ')'}">
+                <div v-for="item in servicesArray" :key="item" class="col">      
+                    <div class="item" :style="{'background-image': 'url(' + require(`../assets/img/${item.image}`) + ')'}">  
                         <div class="text-wrap mx-3">
-                            <span class="text-center">____</span>
+                            <div class="zigzag"></div>
                             <h3 class="mb-0">{{ item.service }}</h3>
                             <p>{{ item.slogan }}</p>
                         </div>
@@ -17,8 +17,8 @@
 
             <!-- user-overview -->
             <div class="overview m-auto mt-5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veritatis nam dignissimos. Natus unde vel culpa quae perferendis fugit saepe recusandae, qui repudiandae necessitatibus quia deleniti perspiciatis officia, quod quidem. <br> <span>_____</span></p>
-                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veritatis nam dignissimos. Natus unde vel culpa quae perferendis fugit saepe recusandae, qui repudiandae necessitatibus quia deleniti perspiciatis officia, quod quidem. </p>
+                <div class="zigzag mb-3"></div>
                 <div class="user">
 
                     <img src="../assets/img/video2-2x.jpg" alt="">
@@ -65,24 +65,30 @@ export default {
 <style lang="scss" scoped>
 @import "../style/common.scss";
 
+.row {
+    margin-top: -40px;
+}
+
 .item {
     height: 250px;
-    border: 1px solid black;
     width: 250px;
     margin: auto;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    background-size:cover;
+    background-size: cover;
+    border-bottom-right-radius: 25px;
+
+    //overlay 
+    
 
     .text-wrap {
         border: 1px solid purple;
         height: 100px;
         width: 100%;
 
-        span {
-            color:red;
-            font-size:bolder;
+        .zigzag {
+            background-color: white;
         }
 
         h3 {
@@ -105,6 +111,9 @@ export default {
         color: white;
     }
 
+    .zigzag {
+        margin: 0 auto;
+    }
     .user {
         display: flex;
         justify-content: center;
@@ -121,6 +130,7 @@ export default {
             list-style: none;
             justify-content: center;
             font-size: .8em;
+            margin-bottom: 100px;
 
             li {
                 margin: 5px;

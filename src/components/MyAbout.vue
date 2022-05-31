@@ -11,23 +11,23 @@
                             <p>Tune up your workout</p>
                             <h1>The best health & fitness advice online</h1>
                             <div class="youtube-channel mt-3 mb-3">
-                                <img src="../assets/img/unnamed.jpg" alt="">
+                                <img class="mx-2" src="../assets/img/unnamed.jpg" alt="">
                                 <div class="yt-user">
-                                    <div class="name-channel">ThemeFusion</div>
+                                    <div class="name-channel mb-1">ThemeFusion</div>
                                     <div class="subscribe">
                                         <div class="btn-subscribe">
-                                            <i class="fa-brands fa-youtube"></i>YouTube
+                                            <i class="fa-brands fa-youtube mx-1"></i>YouTube
                                             <div>999+</div>
                                         </div>
                                         
                                     </div>
                                 </div>
                             </div>
-                            <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis qui aliquid necessitatibus ducimus minima modi omnis est dolorum, quis tempora libero magnam exercitationem explicabo voluptatem praesentium quas repellendus optio distinctio?
+                            <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis qui aliquid necessitatibus libero.
                             </p>
                             <div class="ms-btn btn-red">
-                                <i class="fa-brands fa-youtube"></i>
-                                Visit my Youtube Channel
+                                <i class="fa-brands fa-youtube mx-1"></i>
+                                <a href="">Visit my Youtube Channel</a> 
                             </div>
                             
                       </section>
@@ -49,6 +49,10 @@ export default {
 
 .video-img {
     width: 100%;
+    border-bottom-right-radius: 25px;
+    margin-top: -80px;
+    border-bottom-right-radius: 25px;
+
 }
 
 .row > * {
@@ -56,6 +60,9 @@ export default {
 }
 
 .about-text {
+
+    width: 80%;
+    margin: 0 auto;
 
     p:first-child {
         color:blue;
@@ -65,12 +72,12 @@ export default {
         display:flex;
 
         img {
-            width: 30px;
-            height:30px;
+            width: 40px;
+            height:40px;
         }
 
         .name-channel {
-            font-size: .8em;
+            font-size: .7em;
             color: $jumbo;
         }
 
@@ -80,16 +87,21 @@ export default {
             font-size: .7em;
             padding-left: 5px;
             
+            &:hover {
+                background-color: #EB5252;
+            }
 
             div {
                 background-color: white;
                 color: $jumbo;
                 display: inline-block;
                 border: 1px solid $jumbo;
+                border-left: transparent;
                 padding-right: 5px;
                 padding-left: 5px;
             }
         }
+
     }
     p {
         color: $jumbo;
@@ -98,7 +110,15 @@ export default {
 
     .btn-red {
         display: inline;
-        color: white
+        color: white;
+
+        &:hover {
+                background-color: #EB5252;
+            }
+
+        a {
+            color: white;
+        }
     }
 
 }

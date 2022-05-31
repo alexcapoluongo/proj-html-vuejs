@@ -31,10 +31,10 @@ a {
 	width: 60px;
 	transform: rotate(180deg);
     background:  
-      linear-gradient(135deg, black 35%, transparent 25%) -10px 0,
-      linear-gradient(225deg, black 35%, transparent 25%) -10px 0,
-      linear-gradient(315deg, black 35%, transparent 25%),
-      linear-gradient(45deg, black 35%, transparent 25%);   
+      linear-gradient(135deg, rgba(0,0,0,1) 35%, transparent 25%) -10px 0,
+      linear-gradient(225deg, rgba(0,0,0,1) 35%, transparent 25%) -10px 0,
+      linear-gradient(315deg, rgba(0,0,0,1) 35%, transparent 25%),
+      linear-gradient(45deg, rgba(0,0,0,1) 35%, transparent 25%);   
     background-size: 20px 20px;
     background-color: yellow;
 }
