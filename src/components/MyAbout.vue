@@ -1,7 +1,7 @@
 <template>
   <div>
-      <div class="ms-container pt-5">
-          <div class="container">
+      
+          <div class="container pt-5">
               <div class="row">
                   <div class="col-6">
                       <img class="video-img" src="../assets/img/service15-2x.jpg" alt="">
@@ -34,8 +34,8 @@
                   </div>
               </div>
           </div>
-      </div>
-  </div>
+      
+ </div>
 </template>
 
 <script>
@@ -48,7 +48,9 @@ export default {
 @import "../style/common.scss";
 
 .video-img {
-    width: 100%;
+    width: 80%;
+    padding-left: 0;
+    margin-left:0;
     border-bottom-right-radius: 25px;
     margin-top: -80px;
     border-bottom-right-radius: 25px;

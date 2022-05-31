@@ -12,6 +12,11 @@
             <section class="about" id="about">
                 <MyAbout />
             </section>
+
+            <section class="videos" id="videos">
+                <MyVideos />
+            </section>
+
       -- Main Content
   </main>
 
@@ -22,6 +27,7 @@
 import MyBanner from "./MyBanner.vue";
 import MyServices from "./MyServices.vue";
 import MyAbout from "./MyAbout.vue";
+import MyVideos from "./MyVideos.vue";
 
 
 export default {
@@ -30,6 +36,7 @@ export default {
         MyBanner,
         MyServices,
         MyAbout,
+        MyVideos,
     }
 }
 </script>
