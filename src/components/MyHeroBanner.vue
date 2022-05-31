@@ -1,10 +1,16 @@
 <template>
   <div>
-    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam minus.</p>
+    <p class="mt-2 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam minus.</p>
     <ul>
-        <li><a class="ms-btn" href=""> Visit my Youtube Channel</a></li>
+        <li><a class="ms-btn" href="">
+            <i class="fa-brands fa-youtube mx-2"></i>Visit my Youtube Channel</a>
+        </li>
         <li class="mx-2"><a class="ms-btn" id="btn-gray" href="">Buy Avada today -> </a></li>
     </ul>
+
+    <div class="play-btn">
+        <i class="fas fa-play"></i>
+    </div>
   </div>
 </template>
 
@@ -68,6 +74,25 @@ ul {
                 color: black;
             }
         }
+}
+
+.play-btn {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    right:300px;
+    top: 30%;
+
+    i {
+        color: $dodgerblue;
+        font-size: .8em;
+    }
 }
 
 </style>
