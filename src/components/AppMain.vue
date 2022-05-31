@@ -14,7 +14,7 @@
             </section>
 
             <section class="videos" id="videos">
-                <MyVideos />
+                <MyVideos :videos="videosArray"/>
             </section>
 
             <section class="mailing-list" id="mailing-list">
@@ -67,6 +67,29 @@ export default {
         MyStore,
         MySchedule,
         MyDailyWorkout
+    },
+    data() {
+        return {
+            videosArray: [
+                {
+                    name: "Thighs & glute workout",
+                    slogan: "Increase your mobility",
+                    image: "video2-2x.jpg"
+                },
+
+                {
+                    name: "Lift, firm & perk up",
+                    slogan: "Feel young again",
+                    image: "video7-2x.jpg"
+                },
+
+                {
+                    name: "Slim & trim your waist",
+                    slogan: "Shed those extra pounds",
+                    image: "video9-2x.jpg"
+                }
+            ]
+        }
     }
 }
 </script>

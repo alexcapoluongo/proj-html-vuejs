@@ -90,7 +90,6 @@ export default {
         }
 
         ul {
-            border: 1px solid white;
             font-size: .8em;
             width: 30%;
 
@@ -101,7 +100,8 @@ export default {
             .socials {
                 width: 60%;      
                 color: $monza;
-                font-size:1.5em
+                font-size:1.5em;
+                padding-left: 0;
             }
         }
     }
