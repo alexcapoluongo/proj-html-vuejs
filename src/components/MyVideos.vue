@@ -8,9 +8,13 @@
 
             <div class="container mt-3">
                 <div class="row d-flex justify-content-between">
-                        <div v-for="item in videosArray" :key="item" class="item col-4">                  
-                            <img class="video-img" :src= "require(`../assets/img/${item.image}`)" alt="">
-                        
+                        <div v-for="item in videosArray" :key="item" class="item col-4"> 
+                            <div class="container-img">          
+                                <img class="video-img" :src= "require(`../assets/img/${item.image}`)" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
                             <div class="wrap-text">
                                 <h5 class="workout-name mb-0 mt-3 text-center">{{ item.name }}</h5>
                                 <p class="workout-slogan text-center">{{ item.slogan }}</p>
@@ -54,6 +58,20 @@ export default {
 <style lang="scss" scoped>
 @import "../style/common.scss";
 
+.container-img {
+    position:relative;
+    display:inline-block;
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+
 h4 {
     font-size: 1em;
 }
@@ -86,7 +104,8 @@ a {
     .video-img:hover {
         border-bottom-right-radius: 25px;
         filter:brightness(70%)
-;    }
+    }
+
     .workout-name {
         font-size: 1em;
     }

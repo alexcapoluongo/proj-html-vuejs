@@ -5,6 +5,9 @@
               <div class="row">
                   <div class="img-wrap col-6">
                       <img class="video-img" src="../assets/img/service15-2x.jpg" alt="">
+                      <div class="play-btn">
+                          <i class="fas fa-play"></i>
+                      </div>
                   </div>
                   <div class="col-6">
                       <section class="about-text mt-5">
@@ -48,6 +51,31 @@ export default {
 @import "../style/common.scss";
 
 .img-wrap {
+    position: relative;
+    display: inline-block;
+    
+
+
+    .play-btn {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+        i {
+            color: $dodgerblue;
+            font-size: .8em;
+        }
+    }
+
     .video-img {
         width: 80%;
         border-bottom-right-radius: 25px;
