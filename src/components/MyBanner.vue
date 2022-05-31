@@ -8,7 +8,12 @@
             <div class="zigzag-wrap">
                 <div class="zigzag"></div>
             </div>
-            <MyHeroBanner />
+            <div v-if="isHeroVisible == true" class="hero-components">
+                <MyHeroBanner />
+            </div>
+            <div class="mailing-list-components">
+                <MyMailingList />
+            </div>
 
         </div>
     </div>
@@ -18,13 +23,20 @@
 </template>
 
 <script>
-import MyHeroBanner from "./MyHeroBanner.vue";
+import MyHeroBanner from "./MyHeroBanner.vue"
+import MyMailingList from "./MyMailingList.vue"
 
 export default {
     name: "MyBanner",
+    data() {
+            return {
+                isHeroVisible: true,
+            }
+    },
 
     components: {
         MyHeroBanner,
+        MyMailingList,
     }
 }
 </script>

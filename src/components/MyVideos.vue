@@ -1,38 +1,29 @@
 <template>
-  <div>
-      <div class="ms-container">
-          <div class="title-wrap d-flex justify-content-between align-items-center mt-5">
-            <h4>Featured playlists</h4>
-            <a href="">View all videos ></a>
-          </div>
+    <div>
+        <div class="ms-container">
+            <div class="title-wrap d-flex justify-content-between align-items-center mt-5">
+                <h4>Featured playlists</h4>
+                <a href="">View all videos ></a>
+            </div>
 
-        <div class="container">
-            <div class="row d-flex justify-content-between">
-                    <div v-for="item in videosArray" :key="item" class="item col-4">                  
-                        <img class="video-img" :src= "require(`../assets/img/${item.image}`)" alt="">
-                    <div class="wrap-text">
-                        <h5 class="workout-name mb-0 mt-3 text-center">{{ item.name }}</h5>
-                        <p class="workout-slogan text-center">{{ item.slogan }}</p>
-                    </div>
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                        <div v-for="item in videosArray" :key="item" class="item col-4">                  
+                            <img class="video-img" :src= "require(`../assets/img/${item.image}`)" alt="">
+                        
+                            <div class="wrap-text">
+                                <h5 class="workout-name mb-0 mt-3 text-center">{{ item.name }}</h5>
+                                <p class="workout-slogan text-center">{{ item.slogan }}</p>
+                            </div>
 
-                    <div class="play-btn">
-                        <i class="fas fa-play"></i>
-                    </div>
-
-                    </div>
-            
-
-                
-                <!-- <div class="item col-4">
-                    <img class="video-img" src="../assets/img/video7-2x.jpg" alt="">
+                            <!-- <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div> -->
+                        </div>
                 </div>
-                <div class="item col-4">
-                    <img class="video-img" src="../assets/img/video9-2x.jpg" alt="">
-                </div> -->
             </div>
         </div>
-      </div>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -77,7 +68,7 @@ export default {
     }
 
     .workout-name {
-
+        font-size: 1em;
     }
 
     .workout-slogan {

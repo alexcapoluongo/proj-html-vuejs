@@ -49,8 +49,6 @@ export default {
 
 .video-img {
     width: 80%;
-    padding-left: 0;
-    margin-left:0;
     border-bottom-right-radius: 25px;
     margin-top: -80px;
     border-bottom-right-radius: 25px;

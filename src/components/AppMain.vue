@@ -2,7 +2,7 @@
   <main class="main">
             <!-- struttura in comune del banner  -->
             <section id="hero-banner" class="mt-5">
-                <MyBanner />
+                <MyBanner /> 
             </section>
 
             <section class="services" id="services">
@@ -17,6 +17,17 @@
                 <MyVideos />
             </section>
 
+            <section class="mailing-list" id="mailing-list">
+                <MyBanner />
+            </section>
+
+            <section class="plans" id="plans">
+                <MyPlans />
+            </section>
+
+            <section class="blog" id="blog">
+                <MyVideos />
+            </section>
       -- Main Content
   </main>
 
@@ -28,6 +39,8 @@ import MyBanner from "./MyBanner.vue";
 import MyServices from "./MyServices.vue";
 import MyAbout from "./MyAbout.vue";
 import MyVideos from "./MyVideos.vue";
+import MyPlans from "./MyPlans.vue";
+
 
 
 export default {
@@ -37,6 +50,7 @@ export default {
         MyServices,
         MyAbout,
         MyVideos,
+        MyPlans,
     }
 }
 </script>
@@ -52,6 +66,16 @@ export default {
 #services {
     background: rgb(4,19,255);
     background: linear-gradient(150deg, rgba(4,19,255,1) 10%, rgba(255,0,0,1) 100%);
+}
+
+#mailing-list {
+    background-image: url(../assets/img/banner1-2x.jpg);
+    background-size: cover;
+}
+
+#plans {
+    height: 400px;
+    background: yellow;
 }
 
 </style>

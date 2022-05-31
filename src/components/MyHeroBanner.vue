@@ -1,5 +1,5 @@
 <template>
-  <div>
+<div>
     <p class="mt-2 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam minus.</p>
     <ul>
         <li><a class="ms-btn" href="">
@@ -11,7 +11,8 @@
     <div class="play-btn">
         <i class="fas fa-play"></i>
     </div>
-  </div>
+</div>
+
 </template>
 
 <script>
