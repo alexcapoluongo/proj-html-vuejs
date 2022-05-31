@@ -1,11 +1,13 @@
 <template>
   
   <div class="banner">
+
         <div class="ms-container pt-5">
             <h3 class="mt-3">Certified fitness professional</h3>
             <h1>Take control of your health</h1>
-            <span>_______</span>
-
+            <div class="zigzag-wrap">
+                <div class="zigzag"></div>
+            </div>
             <MyHeroBanner />
 
         </div>
@@ -42,10 +44,7 @@ export default {
     h1 {
         color: white;
     }
-
-    span {
-        color: yellow;
-    }
+    
 
 }
 

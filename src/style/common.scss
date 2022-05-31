@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-//common button
+//common elements
 
 .ms-btn {
     white-space: nowrap; 
@@ -26,8 +26,22 @@ a {
     font-size: .7em;
 }
 
+.zigzag {
+    height: 20px;
+	width: 60px;
+	transform: rotate(180deg);
+    background:  
+      linear-gradient(135deg, black 35%, transparent 25%) -10px 0,
+      linear-gradient(225deg, black 35%, transparent 25%) -10px 0,
+      linear-gradient(315deg, black 35%, transparent 25%),
+      linear-gradient(45deg, black 35%, transparent 25%);   
+    background-size: 20px 20px;
+    background-color: yellow;
+}
+
 // common colors
 $codgray: #060606;
 $dodgerblue: #4154fe;
 $monza: #bc0428;
 $jumbo: #78787a;
+$yellow: #FFFC41;

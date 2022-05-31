@@ -91,7 +91,7 @@ export default {
         }
 
         p {
-            color: yellow;
+            color: $yellow;
         }
     }
 }
