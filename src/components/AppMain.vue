@@ -40,8 +40,6 @@
             <section class="daily-workout" id="daily-workout">
                 <MyDailyWorkout />
             </section>
-
-      -- Main Content
   </main>
 
 </template>
