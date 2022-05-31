@@ -15,10 +15,6 @@
                                 <h5 class="workout-name mb-0 mt-3 text-center">{{ item.name }}</h5>
                                 <p class="workout-slogan text-center">{{ item.slogan }}</p>
                             </div>
-
-                            <!-- <div class="play-btn">
-                                <i class="fas fa-play"></i>
-                            </div> -->
                         </div>
                 </div>
             </div>
@@ -73,9 +69,12 @@ a {
      
     .video-img {
         width: 100%;
-        border-bottom-right-radius: 25px;
+        transition: 1s;
     }
 
+    .video-img:hover {
+        border-bottom-right-radius: 25px;
+    }
     .workout-name {
         font-size: 1em;
     }

@@ -5,7 +5,7 @@
             <!-- grid -->
             <div class="row">
                 <div v-for="item in servicesArray" :key="item" class="col">      
-                    <div class="item ms-rounded" :style="{'background-image': 'url(' + require(`../assets/img/${item.image}`) + ')'}">  
+                    <div class="item" :style="{'background-image': 'url(' + require(`../assets/img/${item.image}`) + ')'}">  
                         <div class="text-wrap mx-3">
                             <div class="zigzag"></div>
                             <h3 class="mb-0">{{ item.service }}</h3>
@@ -77,7 +77,11 @@ export default {
     justify-content: flex-end;
     flex-direction: column;
     background-size: cover;
+    transition: 1s;
 
+    &:hover {
+       border-bottom-right-radius: 25px;
+    }
     //overlay 
     
 

@@ -112,11 +112,10 @@ export default {
 #daily-workout {
     height: 500px;
     color: white;
-    display: flex;
-    justify-content:center;
-    align-items: center;
     background-image:url(../assets/img/banner14-2x.jpg);
     background-size: cover;
+   
+
 }
 
 </style>

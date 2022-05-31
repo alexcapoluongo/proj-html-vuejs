@@ -1,10 +1,12 @@
 <template>
-  <div class="text-center">
-      <!-- bottone play -->
-      <h1>Crossfit workout of the day</h1>
-      <h3>November 15th, 2019</h3>
-      <a href="">View all videos --></a>
-  </div>
+<div class="daily d-flex justify-content-center align-items-center">
+    <div class="text-center">
+        <!-- bottone play -->
+        <h1>Crossfit workout of the day</h1>
+        <h3>November 15th, 2019</h3>
+        <a href="">View all videos --></a>
+    </div>
+</div>
 </template>
 
 <script>
@@ -15,6 +17,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/common.scss";
+
+.daily {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(150deg, rgba(3, 13, 151, 0.777) 10%, rgba(117, 1, 1, 0.782) 100%);
+}
 
 h3 {
     color: yellow;
