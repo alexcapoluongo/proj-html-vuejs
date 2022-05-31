@@ -36,6 +36,11 @@
             <section class="schedule" id="schedule">
                 <MySchedule />
             </section>
+
+            <section class="daily-workout" id="daily-workout">
+                <MyDailyWorkout />
+            </section>
+
       -- Main Content
   </main>
 
@@ -50,6 +55,7 @@ import MyVideos from "./MyVideos.vue";
 import MyPlans from "./MyPlans.vue";
 import MyStore from "./MyStore.vue";
 import MySchedule from "./MySchedule.vue";
+import MyDailyWorkout from "./MyDailyWorkout.vue";
 
 
 export default {
@@ -61,7 +67,8 @@ export default {
         MyVideos,
         MyPlans,
         MyStore,
-        MySchedule
+        MySchedule,
+        MyDailyWorkout
     }
 }
 </script>
@@ -96,6 +103,21 @@ export default {
     justify-content:center;
     align-items: center;
     background-image:url(../assets/img/banner2-2x.jpg);
+    background-size: cover;
+}
+
+#schedule {
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+#daily-workout {
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image:url(../assets/img/banner14-2x.jpg);
     background-size: cover;
 }
 
