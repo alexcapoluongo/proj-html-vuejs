@@ -24,20 +24,24 @@
                 <li>
                     <h6>RECENT POSTS</h6>
                 </li>
-                <li v-for="item in listArray" :key="item">> {{ item }}</li>
+                <li v-for="(item, idx) in listArray" :key="idx">> {{ item }}</li>
             </ul>
             <ul>
                 <li>
                     <h6 class="mb-4">CONTACT INFORMATION</h6>
                 </li>
-                <li class="contact-list" v-for="item in contactObject" :key="item">
+                <li class="contact-list" v-for="(item, idx) in contactObject" :key="idx">
                     <p class="text-secondary mb-5">{{ item.address }}</p>
                     <p>Mobile: {{ item.mobile }}</p>
                     <p>Email: {{ item.email }}</p>
                 </li>
             </ul>
         </div>
-        <div class="footer_bottom"></div>
+    </div>
+    <div class="footer_bottom">
+        <div class="ms-container">
+            <p class="text-secondary text-center"> &copy; Copyright 2012- 2020 | Acada theme by <span>ThemeFusion</span> | All rights reserved | Powered by <span>WordPress</span></p>
+        </div>
     </div>
 </footer>
 
@@ -99,6 +103,17 @@ export default {
                 color: $monza;
                 font-size:1.5em
             }
+        }
+    }
+
+    &_bottom {
+        height: 80px;
+        line-height: 80px;
+        background-color: #0d0b12;
+        border-top: .5px solid $jumbo;
+
+        span {
+            color: white;
         }
     }
 }

@@ -1,35 +1,34 @@
 <template>
   <div>
-      <div class="ms-container">
-        <div class="container">
+      <div class="ms-container"> 
             <!-- grid -->
-            <div class="row">
-                <div v-for="item in servicesArray" :key="item" class="col">      
-                    <div class="item" :style="{'background-image': 'url(' + require(`../assets/img/${item.image}`) + ')'}">  
-                        <div class="text-wrap mx-3">
-                            <div class="zigzag"></div>
-                            <h3 class="mb-0">{{ item.service }}</h3>
-                            <p>{{ item.slogan }}</p>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-
-            <!-- user-overview -->
-            <div class="overview m-auto mt-5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veritatis nam dignissimos. Natus unde vel culpa quae perferendis fugit saepe recusandae, qui repudiandae necessitatibus quia deleniti perspiciatis officia, quod quidem. </p>
-                <div class="zigzag mb-3"></div>
-                <div class="user">
-
-                    <img src="../assets/img/video2-2x.jpg" alt="">
-
-                    <ul class="px-1 pb-5">
-                        <li><span id="username">Brad Johnson</span></li>
-                        <li><span id="user-city">Las Vegas</span></li>
-                    </ul>
-                </div>
+        <div class="row">
+            <div v-for="(item,idx) in servicesArray" :key="idx" class="col">      
+                <div class="item" :style="{'background-image': 'url(' + require(`../assets/img/${item.image}`) + ')'}">  
+                    <div class="text-wrap mx-3">
+                        <div class="zigzag"></div>
+                        <h3 class="mb-0">{{ item.service }}</h3>
+                        <p>{{ item.slogan }}</p>
+                    </div>
+                </div> 
             </div>
         </div>
+
+            <!-- user-overview -->
+        <div class="overview m-auto mt-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veritatis nam dignissimos. Natus unde vel culpa quae perferendis fugit saepe recusandae, qui repudiandae necessitatibus quia deleniti perspiciatis officia, quod quidem. </p>
+            <div class="zigzag mb-3"></div>
+            <div class="user">
+
+                <img src="../assets/img/video2-2x.jpg" alt="">
+
+                <ul class="px-1 pb-5">
+                    <li><span id="username">Brad Johnson</span></li>
+                    <li><span id="user-city">Las Vegas</span></li>
+                </ul>
+            </div>
+        </div>
+        
       </div>
   </div>
 </template>
@@ -70,8 +69,8 @@ export default {
 }
 
 .item {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin: auto;
     display: flex;
     justify-content: flex-end;

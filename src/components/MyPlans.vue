@@ -3,7 +3,7 @@
       <div class="ms-container pt-5">
           <div class="container">
               <div class="row d-flex justify-content-between">
-                  <div v-for="item in itemsArray" :key="item" class="item p-4 pb-5 pt-5 col-4">
+                  <div v-for="(item,idx) in itemsArray" :key="idx" class="item p-4 pb-5 pt-5 col-4">
                       <img :src="require(`../assets/img/${item.image}`)" alt="">
                       <h3>{{ item.title }}</h3>
                       <h4>{{ item.subtitle }}</h4>

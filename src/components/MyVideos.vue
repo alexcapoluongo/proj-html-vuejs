@@ -8,7 +8,7 @@
 
             <div class="container mt-3">
                 <div class="row d-flex justify-content-between">
-                        <div v-for="item in videosArray" :key="item" class="item col-4"> 
+                        <div v-for="(item, idx) in videosArray" :key="idx" class="item col-4"> 
                             <div class="container-img">          
                                 <img class="video-img" :src= "require(`../assets/img/${item.image}`)" alt="">
                                 <div class="play-btn">
@@ -129,11 +129,11 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    i {
-        color: $dodgerblue;
-        font-size: .8em;
+        i {
+            color: $dodgerblue;
+            font-size: .8em;
+        }
     }
-}
 }
 
 </style>
