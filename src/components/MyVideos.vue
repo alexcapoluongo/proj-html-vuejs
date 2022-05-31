@@ -85,7 +85,8 @@ a {
 
     .video-img:hover {
         border-bottom-right-radius: 25px;
-    }
+        filter:brightness(70%)
+;    }
     .workout-name {
         font-size: 1em;
     }

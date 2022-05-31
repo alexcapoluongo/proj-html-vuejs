@@ -81,25 +81,25 @@ export default {
     position: relative;
     overflow: hidden;
 
-    &:after {
-    content: '';
-    position: absolute;
-    width: 100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
-    opacity: .5;  
-    }
 
     &:hover {
        border-bottom-right-radius: 25px;
     }
     //overlay 
-    
+    &:after {
+    content: '';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:linear-gradient(180deg, rgba(0, 0, 0, .2) 10%, rgba(0, 0, 0, .9) 100%);
+    opacity: .5;  
+    }
 
     .text-wrap {
         border: 1px solid purple;
         height: 100px;
         width: 100%;
+        z-index:999;
 
         .zigzag {
             background-color: white;

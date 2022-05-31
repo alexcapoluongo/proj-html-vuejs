@@ -1,10 +1,10 @@
 <template>
   <div>
       
-          <div class="container pt-5">
+          <div class="pt-5">
               <div class="row">
-                  <div class="col-6">
-                      <img class="video-img ms-rounded" src="../assets/img/service15-2x.jpg" alt="">
+                  <div class="img-wrap col-6">
+                      <img class="video-img" src="../assets/img/service15-2x.jpg" alt="">
                   </div>
                   <div class="col-6">
                       <section class="about-text mt-5">
@@ -47,19 +47,12 @@ export default {
 <style lang="scss" scoped>
 @import "../style/common.scss";
 
-.video-img {
-    width: 80%;
-    border-bottom-right-radius: 25px;
-    margin-top: -80px;
-    position:relative;
-
-    &:after {
-    content: '';
-    position: absolute;
-    width: 100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
-    opacity: .5;  
+.img-wrap {
+    .video-img {
+        width: 80%;
+        border-bottom-right-radius: 25px;
+        margin-top: -80px;
+        filter:brightness(70%)
     }
 
 }
@@ -69,7 +62,6 @@ export default {
 }
 
 .about-text {
-
     width: 80%;
     margin: 0 auto;
 
