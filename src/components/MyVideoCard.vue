@@ -1,29 +1,16 @@
 <template>
-  <div>
-      <div class="ms-container">
-            <div class="title-wrap d-flex justify-content-between align-items-center mt-5">
-                <h4>Featured playlists</h4>
-                <a href="">View all videos ></a>
-            </div>
-
-            <div class="container mt-3">
-                <div class="row d-flex justify-content-between">
-                        <div v-for="(item, idx) in videos" :key="idx" :videos="item" class="item col-4"> 
-                            <div class="container-img">          
-                                <img class="video-img" :src= "require(`../assets/img/${videos.image}`)" alt="">
-                                <div class="play-btn">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                            </div>
-                            <div class="wrap-text">
-                                <h5 class="workout-name mb-0 mt-3 text-center">{{ videos.name }}</h5>
-                                <p class="workout-slogan text-center">{{ videos.slogan }}</p>
-                            </div>
-                        </div>
+        <div class="item col-4"> 
+            <div class="container-img">          
+                <img class="video-img" :src= "require(`../assets/img/${videos.image}`)" alt="">
+                <div class="play-btn">
+                    <i class="fas fa-play"></i>
                 </div>
             </div>
-        </div> 
-  </div>
+            <div class="wrap-text">
+                <h5 class="workout-name mb-0 mt-3 text-center">{{ videos.name }}</h5>
+                <p class="workout-slogan text-center">{{ videos.slogan }}</p>
+            </div>
+        </div>                  
 </template>
 
 <script>
@@ -54,14 +41,6 @@ export default {
 }
 
 
-h4 {
-    font-size: 1em;
-}
-
-a {
-    font-size: .8em;
-    color: $jumbo;
-}
 
 .item {
     border: 1px solid black;

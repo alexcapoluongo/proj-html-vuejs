@@ -1,7 +1,6 @@
 <template>
-    <div>
         <!-- VIDEOCARD -->
-        <!-- <div class="ms-container">
+        <div class="ms-container mt-5 mb-5">
             <div class="title-wrap d-flex justify-content-between align-items-center mt-5">
                 <h4>Featured playlists</h4>
                 <a href="">View all videos ></a>
@@ -9,27 +8,11 @@
 
             <div class="container mt-3">
                 <div class="row d-flex justify-content-between">
-                        <div v-for="(item, idx) in videos" :key="idx" :videos="item" class="item col-4"> 
-                            <div class="container-img">          
-                                <img class="video-img" :src= "require(`../assets/img/${videos.image}`)" alt="">
-                                <div class="play-btn">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                            </div>
-                            <div class="wrap-text">
-                                <h5 class="workout-name mb-0 mt-3 text-center">{{ videos.name }}</h5>
-                                <p class="workout-slogan text-center">{{ videos.slogan }}</p>
-                            </div>
-                        </div>
+                    <MyVideoCard v-for="(item, idx) in videos" :key="idx" :videos="item" /> 
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- VIDEOCARD -->
-
-        <MyVideoCard v-for="(item, idx) in videos" :key="idx" :videos="item" /> 
-
-
-    </div>
 </template>
 
 <script>
@@ -44,48 +27,12 @@ export default {
     props: {
     videos: Array,
     },
-
-    // data() {
-    //     return {
-    //         videosArray: [
-    //             {
-    //                 name: "Thighs & glute workout",
-    //                 slogan: "Increase your mobility",
-    //                 image: "video2-2x.jpg"
-    //             },
-
-    //             {
-    //                 name: "Lift, firm & perk up",
-    //                 slogan: "Feel young again",
-    //                 image: "video7-2x.jpg"
-    //             },
-
-    //             {
-    //                 name: "Slim & trim your waist",
-    //                 slogan: "Shed those extra pounds",
-    //                 image: "video9-2x.jpg"
-    //             }
-    //         ]
-    //     }
-    // }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../style/common.scss";
 
-.container-img {
-    position:relative;
-    display:inline-block;
-
-    i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-}
 
 
 h4 {
@@ -97,59 +44,5 @@ a {
     color: $jumbo;
 }
 
-.item {
-    border: 1px solid black;
-    width: 30%;
-     
-    .video-img {
-        width: 100%;
-        transition: 1s;
-        position: relative;
-
-        &:after {
-        content: '';
-        position: absolute;
-        width: 100%; height:100%;
-        top:0; left:0;
-        background:rgba(0,0,0,0.6);
-        opacity: .5;  
-        }
-
-    }
-
-    .video-img:hover {
-        border-bottom-right-radius: 25px;
-        filter:brightness(70%)
-    }
-
-    .workout-name {
-        font-size: 1em;
-    }
-
-    .workout-slogan {
-        font-size: .8em;
-        color: $dodgerblue;
-    }
-
-    .play-btn {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-        i {
-            color: $dodgerblue;
-            font-size: .8em;
-        }
-    }
-}
 
 </style>
