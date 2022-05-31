@@ -4,7 +4,7 @@
           <div class="container pt-5">
               <div class="row">
                   <div class="col-6">
-                      <img class="video-img" src="../assets/img/service15-2x.jpg" alt="">
+                      <img class="video-img ms-rounded" src="../assets/img/service15-2x.jpg" alt="">
                   </div>
                   <div class="col-6">
                       <section class="about-text mt-5">
@@ -51,7 +51,6 @@ export default {
     width: 80%;
     border-bottom-right-radius: 25px;
     margin-top: -80px;
-    border-bottom-right-radius: 25px;
 
 }
 

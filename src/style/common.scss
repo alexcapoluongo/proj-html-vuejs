@@ -14,10 +14,15 @@ a {
 
 //common elements
 
+.ms-rounded {
+    border-bottom-right-radius: 25px;
+}
+
 .ms-btn {
     white-space: nowrap; 
     display: inline-block;
     color: black;
+    border: none;
     background-color: red;
     border-radius: 15px;
     height: 30px;      

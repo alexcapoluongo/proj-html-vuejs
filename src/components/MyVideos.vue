@@ -6,7 +6,7 @@
                 <a href="">View all videos ></a>
             </div>
 
-            <div class="container">
+            <div class="container mt-3">
                 <div class="row d-flex justify-content-between">
                         <div v-for="item in videosArray" :key="item" class="item col-4">                  
                             <img class="video-img" :src= "require(`../assets/img/${item.image}`)" alt="">
@@ -57,6 +57,15 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/common.scss";
+
+h4 {
+    font-size: 1em;
+}
+
+a {
+    font-size: .8em;
+    color: $jumbo;
+}
 
 .item {
     border: 1px solid black;

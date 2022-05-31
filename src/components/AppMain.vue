@@ -28,6 +28,14 @@
             <section class="blog" id="blog">
                 <MyVideos />
             </section>
+
+            <section class="store" id="store">
+                <MyStore />
+            </section>
+
+            <section class="schedule" id="schedule">
+                <MySchedule />
+            </section>
       -- Main Content
   </main>
 
@@ -40,7 +48,8 @@ import MyServices from "./MyServices.vue";
 import MyAbout from "./MyAbout.vue";
 import MyVideos from "./MyVideos.vue";
 import MyPlans from "./MyPlans.vue";
-
+import MyStore from "./MyStore.vue";
+import MySchedule from "./MySchedule.vue";
 
 
 export default {
@@ -51,6 +60,8 @@ export default {
         MyAbout,
         MyVideos,
         MyPlans,
+        MyStore,
+        MySchedule
     }
 }
 </script>
@@ -76,6 +87,16 @@ export default {
 #plans {
     height: 500px;
     background: black;
+}
+
+#store {
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image:url(../assets/img/banner2-2x.jpg);
+    background-size: cover;
 }
 
 </style>
