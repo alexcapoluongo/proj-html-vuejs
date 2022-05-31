@@ -8,15 +8,27 @@
 
         <div class="container">
             <div class="row d-flex justify-content-between">
-                <div class="item col-4">
-                    <img src="../assets/img/video2-2x.jpg" alt="">
+                    <div v-for="item in videosArray" :key="item" class="item col-4">                  
+                        <img class="video-img" :src= "require(`../assets/img/${item.image}`)" alt="">
+                    <div class="wrap-text">
+                        <h5 class="workout-name mb-0 mt-3 text-center">{{ item.name }}</h5>
+                        <p class="workout-slogan text-center">{{ item.slogan }}</p>
+                    </div>
+
+                    <div class="play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+
+                    </div>
+            
+
+                
+                <!-- <div class="item col-4">
+                    <img class="video-img" src="../assets/img/video7-2x.jpg" alt="">
                 </div>
                 <div class="item col-4">
-                    <img src="" alt="">
-                </div>
-                <div class="item col-4">
-                    <img src="" alt="">
-                </div>
+                    <img class="video-img" src="../assets/img/video9-2x.jpg" alt="">
+                </div> -->
             </div>
         </div>
       </div>
@@ -26,6 +38,29 @@
 <script>
 export default {
     name: "MyVideos",
+    data() {
+        return {
+            videosArray: [
+                {
+                    name: "Thighs & glute workout",
+                    slogan: "Increase your mobility",
+                    image: "video2-2x.jpg"
+                },
+
+                {
+                    name: "Lift, firm & perk up",
+                    slogan: "Feel young again",
+                    image: "video7-2x.jpg"
+                },
+
+                {
+                    name: "Slim & trim your waist",
+                    slogan: "Shed those extra pounds",
+                    image: "video9-2x.jpg"
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -35,10 +70,40 @@ export default {
 .item {
     border: 1px solid black;
     width: 30%;
-
-    img {
+     
+    .video-img {
         width: 100%;
+        border-bottom-right-radius: 25px;
     }
+
+    .workout-name {
+
+    }
+
+    .workout-slogan {
+        font-size: .8em;
+        color: $dodgerblue;
+    }
+
+    .play-btn {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    i {
+        color: $dodgerblue;
+        font-size: .8em;
+    }
+}
 }
 
 </style>
