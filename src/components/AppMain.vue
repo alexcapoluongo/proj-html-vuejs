@@ -74,8 +74,8 @@ export default {
 }
 
 #plans {
-    height: 400px;
-    background: yellow;
+    height: 500px;
+    background: black;
 }
 
 </style>
