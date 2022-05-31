@@ -70,6 +70,17 @@ a {
     .video-img {
         width: 100%;
         transition: 1s;
+        position: relative;
+
+        &:after {
+        content: '';
+        position: absolute;
+        width: 100%; height:100%;
+        top:0; left:0;
+        background:rgba(0,0,0,0.6);
+        opacity: .5;  
+        }
+
     }
 
     .video-img:hover {

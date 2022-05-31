@@ -97,9 +97,6 @@ export default {
 #store {
     height: 500px;
     color: white;
-    display: flex;
-    justify-content:center;
-    align-items: center;
     background-image:url(../assets/img/banner2-2x.jpg);
     background-size: cover;
 }
