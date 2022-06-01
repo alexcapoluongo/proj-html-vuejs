@@ -5,7 +5,9 @@
               <div class="row d-flex justify-content-between">
                   <div v-for="(item, idx) in scheduleArray" :key="idx" class="item text-center col-3">
                       <img :src="require(`../assets/img/${item.image}`)" alt="">
-                      <div class="zigzag m-auto mb-2 mt-2"></div>
+                      <div class="zigzag mt-2 mb-2">
+                          <img src="../assets/img/zigzagblue1.png" alt="">
+                      </div>
                       <p>{{ item.paragraph }}</p>
                       <a href="">{{ item.link }} ></a>
                   </div>
@@ -51,11 +53,12 @@ export default {
 @import "../style/common.scss";
 
 .item {
-    border: 1px solid black;
     width: 20%;
 
     .zigzag {
-        background-color: blue;
+        img {
+            width: 40px;
+        }
     }
 
     img {

@@ -6,7 +6,7 @@
             <div v-for="(item,idx) in servicesArray" :key="idx" class="col">      
                 <div class="item" :style="{'background-image': 'url(' + require(`../assets/img/${item.image}`) + ')'}">  
                     <div class="text-wrap mx-3">
-                        <div class="zigzag"></div>
+                        <img src="../assets/img/zigzagwhite1.png" alt="">
                         <h3 class="mb-0">{{ item.service }}</h3>
                         <p>{{ item.slogan }}</p>
                     </div>
@@ -17,11 +17,12 @@
             <!-- user-overview -->
         <div class="overview m-auto mt-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veritatis nam dignissimos. Natus unde vel culpa quae perferendis fugit saepe recusandae, qui repudiandae necessitatibus quia deleniti perspiciatis officia, quod quidem. </p>
-            <div class="zigzag mb-3"></div>
+            <div class="zigzag text-center">
+                <img src="../assets/img/zigzagyellow1.png" alt="">
+            </div>
+            
             <div class="user">
-
                 <img src="../assets/img/video2-2x.jpg" alt="">
-
                 <ul class="px-1 pb-5">
                     <li><span id="username">Brad Johnson</span></li>
                     <li><span id="user-city">Las Vegas</span></li>
@@ -95,10 +96,13 @@ export default {
     }
 
     .text-wrap {
-        border: 1px solid purple;
         height: 100px;
         width: 100%;
         z-index:999;
+
+        img {
+            width: 40px;
+        }
 
         .zigzag {
             background-color: white;
@@ -126,6 +130,8 @@ export default {
 
     .zigzag {
         margin: 0 auto;
+        width:40px;        
+        
     }
     .user {
         display: flex;

@@ -43,7 +43,6 @@ export default {
 
 
 .item {
-    border: 1px solid black;
     width: 30%;
      
     .video-img {

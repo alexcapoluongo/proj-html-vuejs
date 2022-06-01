@@ -50,7 +50,7 @@ export default {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 999;
+    z-index: 9999;
 
     .ms-container {
         display: flex;

@@ -5,10 +5,10 @@
         <div class="ms-container pt-5">
             <h3 class="mt-3">Certified fitness professional</h3>
             <h1>Take control of your health</h1>
-            <div class="zigzag-wrap">
-                <div class="zigzag"></div>
-            </div>
-                <MyHeroBanner isVisible="false"/>         
+                <div class="zigzag-trial">
+                    <img src="../assets/img/zigzagyellow1.png" alt="">
+                </div>       	
+                <MyHeroBanner />         
                 <MyMailingList />
         </div>
     </div>
@@ -29,9 +29,7 @@ export default {
     },
 
     data() {
-            return {
-                isHeroVisible: true,
-            }
+            
     },
 
     components: {
@@ -44,6 +42,7 @@ export default {
 <style lang="scss" scoped>
 
 @import "../style/common.scss";
+
 
 .banner {
     height: 500px;
@@ -63,4 +62,16 @@ export default {
     background: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 97%);
 }
 
+.yellow {
+    color: yellow;
+}
+
+.zigzag-trial {
+    
+    transform: rotate(360deg);
+    img {
+        width: 50px;
+        height: 100%;
+    }
+}
 </style>
