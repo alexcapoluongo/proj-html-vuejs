@@ -33,19 +33,19 @@ ul {
         }
 }
 
-// .ms-btn {
-//     white-space: nowrap; 
-//     display: inline-block;
-//     color: black;
-//     border: none;
-//     background-color: red;
-//     border-radius: 15px;
-//     height: 30px;      
-//     display: flex;
-//     align-items: center;
-//     padding: 10px;      
-//     font-size: .7em;
-// }
+.ms-btn {
+    white-space: nowrap; 
+    color:white;
+    background-color: #4154fe;
+    border-radius: 15px;
+    height: 35px;      
+    padding: 15px;      
+    font-size: .8em;
+    
+    &:hover {
+        background-color: #ec5a57;
+    }
+}
 
 .zigzag {  
     transform: rotate(360deg);
@@ -61,48 +61,3 @@ $royalblue: #4157ef;
 $monza: #bc0428;
 $jumbo: #78787a;
 $yellow: #FFFC41;
-
-//button refactoring
-
-
-.ms-btn {
-    white-space: nowrap; 
-    color:white;
-    background-color: #4154fe;
-    border-radius: 15px;
-    height: 35px;      
-    padding: 15px;      
-    font-size: .8em;
-    
-    &:hover {
-        background-color: #ec5a57;
-    }
-
-}
-
-// .ms-btn {
-//     white-space: nowrap; 
-//     color:white;
-//     border: none;
-//     background-color: #4154fe;
-//     border-radius: 15px;
-//     width: auto;
-//     height: 35px;      
-//     padding: 15px;      
-//     padding-left: 50px;
-//     padding-right: 50px;
-//     font-size: .7em;
-    
-//     &:hover {
-//         background-color: #ec5a57;
-//     }
-// }
-
-// .ms-btn {
-//     background-color: $dodgerblue;
-//     color: white;
-
-//     &:hover {
-//         background-color: #ec5a57;
-//     }
-// }

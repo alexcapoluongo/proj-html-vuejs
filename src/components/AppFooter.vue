@@ -7,16 +7,12 @@
                 <li class="image mb-3">
                     <img src="../assets/img/logo.png" alt="" srcset="">
                 </li>
-                <li class="mb-5">
+                <li class="mb-3">
                     <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia hic veniam sit, consectetur repellat nesciunt quisquam optio ratione a obcaecati numquam ipsa cumque. Tenetur neque corporis culpa voluptatibus, provident at.</p>
                 </li>
-                <li>
-                    <ul class="socials d-flex justify-content-between m-auto">
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                        <li><i class="fa-brands fa-youtube"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-linkedin"></i></li>
+                <li class="d-flex justify-content-center">
+                    <ul class="socials d-flex">
+                        <li class="px-2" v-for="(item, idx) in socialsArray" :key="idx"><i :class="`fa-brands fa-${item}`"></i></li>                   
                     </ul>
                 </li>
             </ul>
@@ -66,6 +62,10 @@ export default {
                     mobile: "1.800.000.0000",
                     email: "info@your-company.com"
                 },
+            ],
+
+            socialsArray: [
+                'facebook-f', 'twitter', 'youtube', 'instagram', 'linkedin',      
             ]
         }
     }
@@ -100,7 +100,7 @@ export default {
             .socials {
                 width: 60%;      
                 color: $monza;
-                font-size:1.5em;
+                font-size:1.2em;
                 padding-left: 0;
             }
         }

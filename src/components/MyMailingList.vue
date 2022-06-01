@@ -27,24 +27,6 @@ input {
     padding-left: 15px;
 }
 
-// .ms-btn {
-//     white-space: nowrap; 
-//     color:white;
-//     border: none;
-//     background-color: #4154fe;
-//     border-radius: 15px;
-//     width: auto;
-//     height: 35px;      
-//     padding: 15px;      
-//     padding-left: 50px;
-//     padding-right: 50px;
-//     font-size: .7em;
-    
-//     &:hover {
-//         background-color: #ec5a57;
-//     }
-// }
-
 p {
     color: $jumbo;
 }

@@ -10,8 +10,6 @@
                       <p class= "mb-2">{{ item.paragraph }}</p>
                       <a href="">{{ item.link}} ></a>
                   </div>
-                  <!-- <div class="item col-4">hey</div>
-                  <div class="item col-4">hey</div> -->
               </div>
           </div>
       </div>

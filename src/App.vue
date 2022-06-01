@@ -32,6 +32,7 @@ export default {
 
 html {
   font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden; 
 }
 
 #app {

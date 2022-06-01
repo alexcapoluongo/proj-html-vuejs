@@ -25,8 +25,8 @@ export default {
     height: 100%;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, .2) 10%, rgba(0, 0, 0, .9) 100%);
-
 }
+
 .ms-btn {
     display: inline;
     padding: 10px;

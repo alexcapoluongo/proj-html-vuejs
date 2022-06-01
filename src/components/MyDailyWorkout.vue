@@ -1,7 +1,6 @@
 <template>
     <div class="daily d-flex justify-content-center align-items-center">
         <div class="text-center">
-            <!-- bottone play -->
             <div class="play-btn m-auto">
                 <i class="fas fa-play"></i>
             </div>
