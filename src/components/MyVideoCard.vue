@@ -72,23 +72,10 @@ export default {
     }
 
     .play-btn {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
-        i {
-            color: $dodgerblue;
-            font-size: .8em;
-        }
     }
 }
 </style>

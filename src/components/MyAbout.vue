@@ -52,23 +52,10 @@ export default {
     display: inline-block;
 
     .play-btn {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
     position: absolute;
     left: 40%;
     top: 40%;
     transform: translate(-50%, -50%);
-
-        i {
-            color: $dodgerblue;
-            font-size: .8em;
-        }
     }
 
     .video-img {
@@ -77,7 +64,6 @@ export default {
         margin-top: -80px;
         filter:brightness(70%)
     }
-
 }
 
 .row > * {
@@ -135,11 +121,12 @@ export default {
     .btn-red {
         display: inline;
         color: white;
-
+        background-color: $monza;
+        background-color: red;
+        padding: 10px;
         &:hover {
                 background-color: #EB5252;
             }
-
         a {
             color: white;
         }

@@ -46,21 +46,6 @@ ul {
             display: flex;
             align-items: center;
         }
-
-        .ms-btn {
-            white-space: nowrap; 
-            color:white;
-            background-color: #4154fe;
-            border-radius: 15px;
-            height: 35px;      
-            padding: 15px;      
-            font-size: .7em;
-            
-            &:hover {
-                background-color: #ec5a57;
-            }
-
-        }
     }
         #btn-gray {
             background-color: black;
@@ -75,21 +60,9 @@ ul {
 }
 
 .play-btn {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
     position: absolute;
     right:300px;
     top: 30%;
-
-    i {
-        color: $dodgerblue;
-        font-size: .8em;
-    }
 }
+
 </style>

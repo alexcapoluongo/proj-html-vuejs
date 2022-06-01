@@ -5,7 +5,7 @@
             <h1>"I've failed over and over again in my life. And that is why I succed"</h1>
             <div class="zigzag m-auto mb-4 mt-4"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem id numquam vel eveniet itaque necessitatibus dolor harum.</p>
-            <button class="ms-btn m-auto">Buy Avada today ></button>
+            <div class="ms-btn m-auto">Buy Avada today ></div>
           </div>
       </div>
   </div>
@@ -28,11 +28,7 @@ export default {
 
 }
 .ms-btn {
-    background-color: $dodgerblue;
-    color: white;
-
-    &:hover {
-        background-color: #ec5a57;
-    }
+    display: inline;
+    padding: 10px;
 }
 </style>

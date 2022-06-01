@@ -28,21 +28,6 @@ export default {
     background: linear-gradient(150deg, rgba(3, 13, 151, 0.777) 10%, rgba(117, 1, 1, 0.782) 100%);
 }
 
-.play-btn {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-
-        i {
-            color: $dodgerblue;
-            font-size: .8em;
-        }
-    }
-
 h3 {
     color: yellow;
 }
@@ -50,4 +35,4 @@ h3 {
 a {
     color: white;
 }
-</style>
+</style> 

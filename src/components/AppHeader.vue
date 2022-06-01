@@ -12,7 +12,7 @@
                     <li><a href="#videos"> Videos </a></li>
                     <li><a href="#blog"> Blog </a></li>
                     <li><a href="#store"> Store </a> <span class="new">new</span> </li>
-                    <li ><a class="schedule" href="#schedule"> Schedule a workout </a></li>
+                    <li ><a class=" ms-btn schedule" href="#schedule"> Schedule a workout </a></li>
                     <li><a href="#shop"> <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                     </li>
@@ -71,18 +71,9 @@ export default {
                     display: flex;
                     align-items: center;
 
-                    .schedule {
-                        white-space: nowrap; 
-                        color:white;
-                        background-color: #4154fe;
-                        border-radius: 15px;
-                        height: 30px;      
-                        padding: 15px;      
-                        font-size: .8em;
-
-                        &:hover {
-                            background-color: #ec5a57;
-                        }
+                    .ms-btn {
+                        color: white;
+                        padding: 10px;
                     }
 
                     .active {

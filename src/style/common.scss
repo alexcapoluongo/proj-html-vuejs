@@ -17,35 +17,35 @@ ul {
     list-style: none;
 }
 
-// .play-btn {
-//     background-color: white;
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     align-items: center;
-//     border-radius: 50%;
-//     height: 55px;
-//     width: 55px;
-
-//         i {
-//             color: #4154fe;
-//             font-size: .8em;
-//         }
-// }
-
-.ms-btn {
-    white-space: nowrap; 
-    display: inline-block;
-    color: black;
-    border: none;
-    background-color: red;
-    border-radius: 15px;
-    height: 30px;      
+.play-btn {
+    background-color: white;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;      
-    font-size: .7em;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+
+        i {
+            color: #4154fe;
+            font-size: .8em;
+        }
 }
+
+// .ms-btn {
+//     white-space: nowrap; 
+//     display: inline-block;
+//     color: black;
+//     border: none;
+//     background-color: red;
+//     border-radius: 15px;
+//     height: 30px;      
+//     display: flex;
+//     align-items: center;
+//     padding: 10px;      
+//     font-size: .7em;
+// }
 
 .zigzag {  
     transform: rotate(360deg);
@@ -65,47 +65,20 @@ $yellow: #FFFC41;
 //button refactoring
 
 
-// .play-btn {
-    //common part//
-//     background-color: white;
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     align-items: center;
-//     border-radius: 50%;
-//     height: 55px;
-//     width: 55px;
-
-//         i {
-//             color: $dodgerblue;
-//             font-size: .8em;
-//         }
-
-//no common part 
-
-//     position: absolute;
-//     left: 40%;
-//     top: 40%;
-//     transform: translate(-50%, -50%);
-
-//     }
-
-
-
-// .ms-btn {
-//     white-space: nowrap; 
-//     color:white;
-//     background-color: #4154fe;
-//     border-radius: 15px;
-//     height: 35px;      
-//     padding: 15px;      
-//     font-size: .7em;
+.ms-btn {
+    white-space: nowrap; 
+    color:white;
+    background-color: #4154fe;
+    border-radius: 15px;
+    height: 35px;      
+    padding: 15px;      
+    font-size: .8em;
     
-//     &:hover {
-//         background-color: #ec5a57;
-//     }
+    &:hover {
+        background-color: #ec5a57;
+    }
 
-// }
+}
 
 // .ms-btn {
 //     white-space: nowrap; 
