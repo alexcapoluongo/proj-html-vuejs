@@ -1,51 +1,48 @@
 <template>
   <main class="main">
-            <!-- struttura in comune del banner  -->
-            <section id="hero-banner" class="mt-5">
-                <MyBanner hasButtons="true" :hasInput="false" /> 
-            </section>
+    <section id="hero-banner" class="mt-5">
+        <MyBanner hasButtons="true" :hasInput="false" /> 
+    </section>
 
-            <section class="services" id="services">
-                <MyServices />
-            </section>
+    <section class="services" id="services">
+        <MyServices />
+    </section>
 
-            <section class="about" id="about">
-                <MyAbout />
-            </section>
+    <section class="about" id="about">
+        <MyAbout />
+    </section>
 
-            <section class="videos" id="videos">
-                <MyVideos :videos="videosArray"/>
-            </section>
+    <section class="videos" id="videos">
+        <MyVideos :videos="videosArray"/>
+    </section>
 
-            <section class="mailing-list" id="mailing-list">
-                <MyBanner/>
-            </section>
+    <section class="mailing-list" id="mailing-list">
+        <MyBanner/>
+    </section>
 
-            <section class="plans" id="plans">
-                <MyPlans />
-            </section>
+    <section class="plans" id="plans">
+        <MyPlans />
+    </section>
 
-            <section class="blog" id="blog">
-                <MyVideos :articles="articlesArray" />
-            </section>
+    <section class="blog" id="blog">
+        <MyVideos :articles="articlesArray" />
+    </section>
 
-            <section class="store" id="store">
-                <MyStore />
-            </section>
+    <section class="store" id="store">
+        <MyStore />
+    </section>
 
-            <section class="schedule" id="schedule">
-                <MySchedule />
-            </section>
+    <section class="schedule" id="schedule">
+        <MySchedule />
+    </section>
 
-            <section class="daily-workout" id="daily-workout">
-                <MyDailyWorkout />
-            </section>
+    <section class="daily-workout" id="daily-workout">
+        <MyDailyWorkout />
+    </section>
   </main>
-
 </template>
 
 <script>
-
 import MyBanner from "./MyBanner.vue";
 import MyServices from "./MyServices.vue";
 import MyAbout from "./MyAbout.vue";
@@ -54,7 +51,6 @@ import MyPlans from "./MyPlans.vue";
 import MyStore from "./MyStore.vue";
 import MySchedule from "./MySchedule.vue";
 import MyDailyWorkout from "./MyDailyWorkout.vue";
-
 
 export default {
     name: "AppMain",
@@ -156,8 +152,5 @@ export default {
     color: white;
     background-image:url(../assets/img/banner14-2x.jpg);
     background-size: cover;
-   
-
 }
-
 </style>

@@ -1,44 +1,41 @@
 <template>
   <div>
-      
-          <div class="pt-5">
-              <div class="row">
-                  <div class="img-wrap col-6">
-                      <img class="video-img" src="../assets/img/service15-2x.jpg" alt="">
-                      <div class="play-btn">
-                          <i class="fas fa-play"></i>
-                      </div>
-                  </div>
-                  <div class="col-6">
-                      <section class="about-text mt-5">
-                            <p>Tune up your workout</p>
-                            <h1>The best health & fitness advice online</h1>
-                            <div class="youtube-channel mt-3 mb-3">
-                                <img class="mx-2" src="../assets/img/unnamed.jpg" alt="">
-                                <div class="yt-user">
-                                    <div class="name-channel mb-1">ThemeFusion</div>
-                                    <div class="subscribe">
-                                        <div class="btn-subscribe">
-                                            <i class="fa-brands fa-youtube mx-1"></i>YouTube
-                                            <div>999+</div>
-                                        </div>
-                                        
-                                    </div>
+    <div class="pt-5">
+        <div class="row">
+            <div class="img-wrap col-6">
+                <img class="video-img" src="../assets/img/service15-2x.jpg" alt="">
+                <div class="play-btn">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <div class="col-6">
+                <section class="about-text mt-5">
+                    <p>Tune up your workout</p>
+                    <h1>The best health & fitness advice online</h1>
+                    <div class="youtube-channel mt-3 mb-3">
+                        <img class="mx-2" src="../assets/img/unnamed.jpg" alt="">
+                        <div class="yt-user">
+                            <div class="name-channel mb-1">ThemeFusion</div>
+                            <div class="subscribe">
+                                <div class="btn-subscribe">
+                                    <i class="fa-brands fa-youtube mx-1"></i>YouTube
+                                    <div>999+</div>
                                 </div>
+                                
                             </div>
-                            <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis qui aliquid necessitatibus libero.
-                            </p>
-                            <div class="ms-btn btn-red">
-                                <i class="fa-brands fa-youtube mx-1"></i>
-                                <a href="">Visit my Youtube Channel</a> 
-                            </div>
-                            
-                      </section>
-                  </div>
-              </div>
-          </div>
-      
- </div>
+                        </div>
+                    </div>
+                    <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis qui aliquid necessitatibus libero.
+                    </p>
+                    <div class="ms-btn btn-red">
+                        <i class="fa-brands fa-youtube mx-1"></i>
+                        <a href="">Visit my Youtube Channel</a> 
+                    </div>       
+                </section>
+            </div>
+        </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -53,8 +50,6 @@ export default {
 .img-wrap {
     position: relative;
     display: inline-block;
-    
-
 
     .play-btn {
     background-color: white;
@@ -132,10 +127,10 @@ export default {
         }
 
     }
+
     p {
         color: $jumbo;
     }
-
 
     .btn-red {
         display: inline;
@@ -150,5 +145,4 @@ export default {
         }
     }
 }
-
 </style>

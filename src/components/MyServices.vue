@@ -13,7 +13,6 @@
                 </div> 
             </div>
         </div>
-
             <!-- user-overview -->
         <div class="overview m-auto mt-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veritatis nam dignissimos. Natus unde vel culpa quae perferendis fugit saepe recusandae, qui repudiandae necessitatibus quia deleniti perspiciatis officia, quod quidem. </p>
@@ -37,7 +36,6 @@
 <script>
 export default {
     name: "MyServices",
-
     data() {
         return {
             servicesArray: [
@@ -80,7 +78,6 @@ export default {
     transition: 1s;
     position: relative;
     overflow: hidden;
-
 
     &:hover {
        border-bottom-right-radius: 25px;
@@ -166,7 +163,5 @@ export default {
             }
         }
     }
-
-   
 }
 </style>

@@ -1,18 +1,17 @@
 <template>
-<div>
-    <p class="mt-2 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam minus.</p>
-    <ul>
-        <li><a class="ms-btn" href="">
-            <i class="fa-brands fa-youtube mx-2"></i>Visit my Youtube Channel</a>
-        </li>
-        <li class="mx-2"><a class="ms-btn" id="btn-gray" href="">Buy Avada today -> </a></li>
-    </ul>
+    <div>
+        <p class="mt-2 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam minus.</p>
+        <ul>
+            <li><a class="ms-btn" href="">
+                <i class="fa-brands fa-youtube mx-2"></i>Visit my Youtube Channel</a>
+            </li>
+            <li class="mx-2"><a class="ms-btn" id="btn-gray" href="">Buy Avada today -> </a></li>
+        </ul>
 
-    <div class="play-btn">
-        <i class="fas fa-play"></i>
+        <div class="play-btn">
+            <i class="fas fa-play"></i>
+        </div>
     </div>
-</div>
-
 </template>
 
 <script>
@@ -23,8 +22,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/common.scss";
-
-
 
 .ms-container {
     background: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 97%);
@@ -95,5 +92,4 @@ ul {
         font-size: .8em;
     }
 }
-
 </style>

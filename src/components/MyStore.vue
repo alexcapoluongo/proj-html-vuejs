@@ -30,5 +30,9 @@ export default {
 .ms-btn {
     background-color: $dodgerblue;
     color: white;
+
+    &:hover {
+        background-color: #ec5a57;
+    }
 }
 </style>

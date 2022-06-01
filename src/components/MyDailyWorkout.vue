@@ -1,15 +1,15 @@
 <template>
-<div class="daily d-flex justify-content-center align-items-center">
-    <div class="text-center">
-        <!-- bottone play -->
-        <div class="play-btn m-auto">
-            <i class="fas fa-play"></i>
+    <div class="daily d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <!-- bottone play -->
+            <div class="play-btn m-auto">
+                <i class="fas fa-play"></i>
+            </div>
+            <h1>Crossfit workout of the day</h1>
+            <h3>November 15th, 2019</h3>
+            <a href="">View all videos --></a>
         </div>
-        <h1>Crossfit workout of the day</h1>
-        <h3>November 15th, 2019</h3>
-        <a href="">View all videos --></a>
     </div>
-</div>
 </template>
 
 <script>
@@ -50,5 +50,4 @@ h3 {
 a {
     color: white;
 }
-
 </style>

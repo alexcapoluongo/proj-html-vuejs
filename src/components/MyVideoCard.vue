@@ -16,7 +16,6 @@
 <script>
 export default {
     name: "MyVideoCard",
-
     props: {
         videos:Object,
     }
@@ -24,7 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @import "../style/common.scss";
 
 .container-img {
@@ -39,8 +37,6 @@ export default {
         text-align: center;
     }
 }
-
-
 
 .item {
     width: 30%;
@@ -95,5 +91,4 @@ export default {
         }
     }
 }
-
 </style>

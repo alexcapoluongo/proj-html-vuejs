@@ -1,23 +1,16 @@
 <template>
-<div>  
-    <div class="mail-input d-flex">
-        <input type="text" placeholder="Insert your mail ...">
-        <button class="ms-btn mx-3"> Subscribe </button>
+    <div>  
+        <div class="mail-input d-flex">
+            <input type="text" placeholder="Insert your mail ...">
+            <button class="ms-btn mx-3"> Subscribe </button>
+        </div>
+        <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, dolor</p>
     </div>
-    <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, dolor</p>
-
-</div>
-
 </template>
 
 <script>
 export default {
     name: "MyMailingList",
-    data() {
-        return {
-            //maybe a props????
-        }
-    }
 }
 </script>
 

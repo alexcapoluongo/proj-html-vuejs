@@ -47,8 +47,6 @@ export default {
                     paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus earum doloremque repellat commodi libero facere, nisi magnam veritatis temporibus totam.",
                     link: "Schedule a workout"
                 },
-
-
             ]
         }
     }

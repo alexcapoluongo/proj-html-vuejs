@@ -1,12 +1,8 @@
 <template>
   <div id="app">
-  
-  <AppHeader />
-
-  <AppMain />
-
-  <AppFooter />
-
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
   </div>
 </template>
 
@@ -27,7 +23,7 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-//reset
+
 * {
   padding: 0;
   margin: 0;

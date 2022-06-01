@@ -1,5 +1,4 @@
-<template>
-  
+<template> 
    <header class="header">
        <div class="ms-container">
            <div class="logo-header">
@@ -20,28 +19,20 @@
                     <li><a href="#search"> <i class="fas fa-search"></i>
                         </a>
                     </li>
-
                </ul>
            </div>
        </div>
-
   </header>
-
 </template>
 
 <script>
 export default {
     name: "AppHeader",
-    data() {
-        return {
-        }
-    }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../style/common.scss";
-
 
 .header {
     width: 100%;
@@ -128,6 +119,4 @@ export default {
         }
     }
 }
-
-
 </style>

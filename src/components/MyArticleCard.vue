@@ -13,14 +13,11 @@
 <script>
 export default {
     name: "MyArticleCard",
-
     props: {
         articles:Object,
     }
 }
 </script>
-
-
 
 <style lang="scss" scoped>
 @import "../style/common.scss";
@@ -37,8 +34,6 @@ export default {
         text-align: center;
     }
 }
-
-
 
 .item {
     width: 30%;
@@ -74,6 +69,5 @@ export default {
     }
 
 }
-
 </style>
 

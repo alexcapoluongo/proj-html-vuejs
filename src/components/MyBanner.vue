@@ -1,5 +1,4 @@
 <template>
-  
   <div class="banner">
 
         <div class="ms-container pt-5">
@@ -12,9 +11,6 @@
                 <MyMailingList v-if="hasInput"/>
         </div>
     </div>
-            
-
-
 </template>
 
 <script>
@@ -23,16 +19,10 @@ import MyMailingList from "./MyMailingList.vue"
 
 export default {
     name: "MyBanner",
-
     props: {
         hasButtons: Boolean,
         hasInput: Boolean,
     },
-
-    data() {
-            
-    },
-
     components: {
         MyHeroBanner,
         MyMailingList,
@@ -41,9 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @import "../style/common.scss";
-
 
 .banner {
     height: 500px;
@@ -62,6 +50,4 @@ export default {
 .ms-container {
     background: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 97%);
 }
-
-
 </style>
