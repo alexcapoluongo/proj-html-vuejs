@@ -65,7 +65,7 @@ export default {
 <style lang="scss" scoped>
 @import "../style/common.scss";
 
-.row {
+.col {
     margin-top: -40px;
 }
 
