@@ -17,7 +17,7 @@
     </section>
 
     <section class="mailing-list" id="mailing-list">
-        <MyBanner/>
+        <MyBanner :hasInput="true"/>
     </section>
 
     <section class="plans" id="plans">

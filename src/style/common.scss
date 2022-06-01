@@ -17,6 +17,22 @@ ul {
     list-style: none;
 }
 
+// .play-btn {
+//     background-color: white;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+//     border-radius: 50%;
+//     height: 55px;
+//     width: 55px;
+
+//         i {
+//             color: #4154fe;
+//             font-size: .8em;
+//         }
+// }
+
 .ms-btn {
     white-space: nowrap; 
     display: inline-block;
@@ -45,3 +61,75 @@ $royalblue: #4157ef;
 $monza: #bc0428;
 $jumbo: #78787a;
 $yellow: #FFFC41;
+
+//button refactoring
+
+
+// .play-btn {
+    //common part//
+//     background-color: white;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+//     border-radius: 50%;
+//     height: 55px;
+//     width: 55px;
+
+//         i {
+//             color: $dodgerblue;
+//             font-size: .8em;
+//         }
+
+//no common part 
+
+//     position: absolute;
+//     left: 40%;
+//     top: 40%;
+//     transform: translate(-50%, -50%);
+
+//     }
+
+
+
+// .ms-btn {
+//     white-space: nowrap; 
+//     color:white;
+//     background-color: #4154fe;
+//     border-radius: 15px;
+//     height: 35px;      
+//     padding: 15px;      
+//     font-size: .7em;
+    
+//     &:hover {
+//         background-color: #ec5a57;
+//     }
+
+// }
+
+// .ms-btn {
+//     white-space: nowrap; 
+//     color:white;
+//     border: none;
+//     background-color: #4154fe;
+//     border-radius: 15px;
+//     width: auto;
+//     height: 35px;      
+//     padding: 15px;      
+//     padding-left: 50px;
+//     padding-right: 50px;
+//     font-size: .7em;
+    
+//     &:hover {
+//         background-color: #ec5a57;
+//     }
+// }
+
+// .ms-btn {
+//     background-color: $dodgerblue;
+//     color: white;
+
+//     &:hover {
+//         background-color: #ec5a57;
+//     }
+// }
