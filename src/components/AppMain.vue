@@ -2,7 +2,7 @@
   <main class="main">
             <!-- struttura in comune del banner  -->
             <section id="hero-banner" class="mt-5">
-                <MyBanner /> 
+                <MyBanner isVisible /> 
             </section>
 
             <section class="services" id="services">
@@ -26,7 +26,7 @@
             </section>
 
             <section class="blog" id="blog">
-                <MyVideos />
+                <MyVideos :articles="articlesArray" />
             </section>
 
             <section class="store" id="store">
@@ -68,6 +68,7 @@ export default {
         MySchedule,
         MyDailyWorkout
     },
+
     data() {
         return {
             videosArray: [
@@ -88,6 +89,27 @@ export default {
                     slogan: "Shed those extra pounds",
                     image: "video9-2x.jpg"
                 }
+            ],
+
+            articlesArray: [
+
+                {
+                    name: "The best protein shake",
+                    author: "By admin | November 26th, 2019 | Gym",
+                    image: "blog1-2x.jpg"
+                },
+
+                {
+                    name: "Ultimate cardio workout",
+                    author: "By admin | November 26th, 2019 | Gym",
+                    image: "blog3-2x.jpg"
+                },
+
+                {
+                    name: "New juices available now",
+                    author: "By admin | November 26th, 2019 | Gym",
+                    image: "blog4-2x.jpg"
+                }    
             ]
         }
     }

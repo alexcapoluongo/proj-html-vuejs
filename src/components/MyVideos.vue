@@ -9,6 +9,7 @@
             <div class="container mt-3">
                 <div class="row d-flex justify-content-between">
                     <MyVideoCard v-for="(item, idx) in videos" :key="idx" :videos="item" /> 
+                    <MyArticleCard v-for="(item, idx) in articles" :key="idx" :articles="item" /> 
                 </div>
             </div>
         </div>
@@ -16,16 +17,20 @@
 </template>
 
 <script>
-import MyVideoCard from "./MyVideoCard.vue"
+import MyVideoCard from "./MyVideoCard.vue";
+import MyArticleCard from "./MyArticleCard.vue";
+
 export default {
     name: "MyVideos",
 
     components: {
         MyVideoCard,
+        MyArticleCard,
     },
 
     props: {
     videos: Array,
+    articles: Array,
     },
 }
 </script>

@@ -8,13 +8,8 @@
             <div class="zigzag-wrap">
                 <div class="zigzag"></div>
             </div>
-            <div v-if="isHeroVisible == true" class="hero-components">
-                <MyHeroBanner />
-            </div>
-            <div class="mailing-list-components">
+                <MyHeroBanner isVisible="false"/>         
                 <MyMailingList />
-            </div>
-
         </div>
     </div>
             
@@ -28,6 +23,11 @@ import MyMailingList from "./MyMailingList.vue"
 
 export default {
     name: "MyBanner",
+
+    props: {
+        isVisible: Boolean,
+    },
+
     data() {
             return {
                 isHeroVisible: true,
