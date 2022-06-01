@@ -18,11 +18,6 @@
 <script>
 export default {
     name: "MyHeroBanner",
-    data() {
-        return {
-            isHeroVisible: false,
-        }
-    }
 }
 </script>
 

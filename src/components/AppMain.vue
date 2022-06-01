@@ -2,7 +2,7 @@
   <main class="main">
             <!-- struttura in comune del banner  -->
             <section id="hero-banner" class="mt-5">
-                <MyBanner isVisible /> 
+                <MyBanner hasButtons="true" :hasInput="false" /> 
             </section>
 
             <section class="services" id="services">
@@ -18,7 +18,7 @@
             </section>
 
             <section class="mailing-list" id="mailing-list">
-                <MyBanner />
+                <MyBanner/>
             </section>
 
             <section class="plans" id="plans">
